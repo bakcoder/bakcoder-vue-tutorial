@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VUE CDN HELLO</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <style>
+        .app {
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        {{msg_hello}}
+        <br>
+        {{msg_bye}}
+    </div>
+    
+    <script>
+        const App = {
+            data() {
+                return {
+                    msg_hello: 'hello Vue CDN',
+                    msg_bye: 'bye Vue CDN'
+                }
+            }
+        }
+
+        Vue.createApp(App).mount('.app')
+    </script>
+</body>
+</html>
